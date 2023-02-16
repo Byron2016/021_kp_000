@@ -1,0 +1,29 @@
+{
+  "name": "021_kp_000",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pret_check": "prettier . --check",
+    "pret_fix": "prettier . --fix",
+    "eslint_check": "eslint .",
+    "eslint_fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "eslint": "^8.34.0",
+		"eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "postcss": "8.4.21",
+		"prettier": "^2.8.4",
+    "sass": "1.58.0",
+    "surge": "^0.23.1",
+    "vite": "^4.1.0"
+  }
+}
