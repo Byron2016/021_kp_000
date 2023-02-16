@@ -1,3 +1,2 @@
-body {
-	background-color: rgb(167, 93, 93);
-}
+@import './fonts.css';
+@import './common.css';
