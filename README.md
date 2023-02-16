@@ -26,7 +26,55 @@
 ## References
 
 - Kiko Palomares tutorial and Github repositories
+
   - [Presentación - Crea una página web con elementos Flotantes (Proyecto de CSS desde cero)](https://www.youtube.com/watch?v=0m7AXUkqLbQ)
   - [Presentación y recursos - Crear una página web con elementos flotantes](https://kikopalomares.com/clases/proyecto-con-flotantes)
 
+- Colors
+  - [The super fast color palettes generator](https://coolors.co/)
+
 ## Steps
+
+    - Add html section into html main page using js.
+    	- Add js code
+    	```js
+    	function includeHTML() {
+    	let z, i, elmnt, file, xhttp;
+    	/* loop through a collection of all HTML 		lements: */
+    	z = document.getElementsByTagName('*');
+    	for (i = 0; i < z.length; i++) {
+    		elmnt = z[i];
+    		/* search for elements with a certain 		trribute: */
+    		file = elmnt.getAttribute('include-html');
+    		if (file) {
+    			/* make an HTTP request using the 		ttribute value as the file name: */
+    			xhttp = new XMLHttpRequest();
+    			xhttp.onreadystatechange = function () {
+    				if (this.readyState == 4) {
+    					if (this.status == 200) {
+    						elmnt.innerHTML = this.		esponseText;
+    					}
+    					if (this.status == 404) {
+    						elmnt.innerHTML = 'Page 	not 	ound.';
+    					}
+    					/* remove the attribute, and 		all this function once more: */
+    					elmnt.removeAttribute		'include-html');
+    					includeHTML();
+    				}
+    			};
+    			xhttp.open('GET', file, true);
+    			xhttp.send();
+    			/* exit the function: */
+    			return;
+    		}
+    	}
+
+    	includeHTML();
+    	```
+
+    	- Add html code
+
+    	```html
+    	<div include-html="./partials/header.html"></div>
+    	<script src="/js/include-html.js"></script>
+    	```
