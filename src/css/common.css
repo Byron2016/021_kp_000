@@ -5,7 +5,28 @@ body {
 	font-family: 'NunitoSans-Regular', Arial, Helvetica, sans-serif;
 }
 
-.container {
+#container {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.text-secondary {
+	color: var(--secondary-color);
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+	color: var(--primary-color-dark);
 }
