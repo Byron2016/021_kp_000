@@ -1,4 +1,5 @@
 import themeColors from './colors.js';
+import { localStorageSet } from './common.js';
 
 const buttons = document.getElementsByTagName('button');
 
@@ -6,6 +7,7 @@ const buttonPressed = e => {
 	const isButton = e.target.nodeName === 'BUTTON';
 	if (isButton) {
 		const buttonClicked = e.target.id;
+		localStorageSet('theme', buttonClicked);
 		switch (buttonClicked) {
 			case 'color_theme_01':
 				route(buttonClicked);

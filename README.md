@@ -31,7 +31,11 @@
   - [Presentación y recursos - Crear una página web con elementos flotantes](https://kikopalomares.com/clases/proyecto-con-flotantes)
 
 - Colors
+
   - [The super fast color palettes generator](https://coolors.co/)
+
+- LocalStorage
+  - [HTML Living Standard — Last Updated 17 February 2023](https://html.spec.whatwg.org/multipage/)
 
 ## Steps
 

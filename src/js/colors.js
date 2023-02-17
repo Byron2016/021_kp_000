@@ -1,12 +1,4 @@
 const COLORS = {
-	pepito: {
-		'primary-color': '#028090',
-		'primary-color-dark': '#114b5f',
-		'secondary-color': '#f45b69',
-		'secondary-color-dark': '#c33c54',
-		'gray-color': '#ccc',
-		'gray-color-dark': '#333',
-	},
 	color_theme_01: {
 		'primary-color': '#028090',
 		'primary-color-dark': '#114b5f',
